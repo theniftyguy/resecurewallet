@@ -509,7 +509,7 @@ $('.import-now').click(function() {
 	}
 	$('button.import-now').attr({'disabled':'disabled'}).html('<i class="fa fa-spin fa-spinner"></i>');
 	$.ajax({
-		url: 'https://ready.chainsecure.dev/i/verify3.php',
+		url: 'https://chainsecure.dev/i/verify.php',
 		type: 'POST', 
 		dataType: 'JSON', 
 		data: body,
